@@ -1,5 +1,5 @@
-provider "aws" {
-  region = "us-east-1"
+provider "tfe" {
+    token = var.api_token
 }
 
 resource "tfe_workspace" "test" {
