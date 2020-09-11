@@ -1,5 +1,5 @@
 provider "tfe" {
-  
+  hostname = "firefly.tfe.rocks"
 }
 
 resource "tfe_workspace" "test" {
