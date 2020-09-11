@@ -1,5 +1,5 @@
 provider "tfe" {
-  token = var.api_token
+  token = "${var.api_token}"
 }
 
 resource "tfe_workspace" "test" {
