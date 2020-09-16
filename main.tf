@@ -8,7 +8,7 @@ resource "tfe_workspace" "example" {
   organization = "my-org"
 }
 
-resource "tfe_team" "first_team" {
+/* resource "tfe_team" "first_team" {
   name         = "first-team"
   organization = "test-org"
 } */
