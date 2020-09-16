@@ -8,16 +8,6 @@ resource "tfe_workspace" "example" {
   organization = "my-org"
 }
 
-/* resource "tfe_workspace" "test" {
-  name         = "my_automated_workspace"
-  organization = "my-org"
-}
-
-resource "tfe_workspace" "test2" {
-  name = "second_workspace"
-  organization = "test-org"
-}
-
 resource "tfe_team" "first_team" {
   name         = "first-team"
   organization = "test-org"
