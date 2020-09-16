@@ -14,9 +14,9 @@ resource "tfe_team" "managing_teams" {
   organization = "my-org"
   visibility   = "organization"
   organization_access {
-    "manage_policies"     = true
-    "manage_workspaces"   = true
-    "manage_vcs_settings" = true
+    manage_policies     = true
+    manage_workspaces   = true
+    manage_vcs_settings = true
   }
 
 }
