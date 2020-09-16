@@ -21,4 +21,10 @@ resource "tfe_team" "managing_teams" {
 
 }
 
+resource "tfe_team_access" "example" {
+  access = "admin"
+  team_id = "${tfe_team.managing_teams.id[0]}"
+  workspace_id = "${tfe_workspace.example.id[3]}"
+}
+
 
