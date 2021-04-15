@@ -1,17 +1,17 @@
 provider "tfe" {
-  hostname = "firefly.tfe.rocks"
+  hostname = "tfe-demo.is.very-serious.business"
 }
 
 resource "tfe_workspace" "example" {
   count        = length(var.workspace_names)
   name         = var.workspace_names[count.index]
-  organization = "my-org"
+  organization = "jefferies-demo"
 }
 
 resource "tfe_team" "managing_teams" {
   count        = length(var.managing_team_list)
   name         = var.managing_team_list[count.index]
-  organization = "my-org"
+  organization = "jefferies-demo"
   visibility   = "organization"
   organization_access {
     manage_policies     = true
