@@ -1,5 +1,5 @@
 provider "tfe" {
-  hostname = "tfe-demo.is.very-serious.business"
+  hostname = var.hostname
 }
 
 resource "tfe_workspace" "example" {
