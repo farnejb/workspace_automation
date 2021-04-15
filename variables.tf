@@ -1,6 +1,5 @@
 variable "workspace_names" {
   type = list(string)
-  default = ["AWS-Networking-SBX", "AWS-Networking-DEV", "AWS-Networking-TST", "AWS-Networking-PRD"]
 }
 
 variable "managing_team_list" {
@@ -9,6 +8,10 @@ variable "managing_team_list" {
 }
 
 variable "hostname" {
+  type = string
+}
+
+variable "org" {
   type = string
 }
 /* variable "api_token" {
